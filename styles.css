@@ -1,0 +1,226 @@
+/* GvOS Website Stylesheet - Debian-inspired design */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    color: #d70a53;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #d70a53;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.logo .tagline {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #c70a4f 0%, #d70a53 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.95;
+}
+
+/* Content sections */
+.content-section {
+    padding: 3rem 0;
+}
+
+.content-section.alternate {
+    background-color: #f5f5f5;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #d70a53;
+}
+
+.content-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.content-section p {
+    margin-bottom: 1rem;
+}
+
+/* Column layout */
+.columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.column {
+    padding: 1rem;
+}
+
+/* Download cards */
+.download-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.download-card {
+    background: white;
+    border: 2px solid #d70a53;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.download-card h3 {
+    color: #d70a53;
+    margin-bottom: 1rem;
+}
+
+/* Lists */
+.doc-links, .support-links {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.doc-links li, .support-links li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.doc-links li::before, .support-links li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #d70a53;
+    font-weight: bold;
+}
+
+.doc-links a, .support-links a {
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #d70a53;
+}
+
+footer a:hover {
+    color: #ff0a63;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .columns {
+        grid-template-columns: 1fr;
+    }
+}
