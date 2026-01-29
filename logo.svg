@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Circle background -->
-  <circle cx="100" cy="100" r="95" fill="#d70a53" stroke="#333" stroke-width="2"/>
-  
-  <!-- Text GvOS -->
-  <text x="100" y="120" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="#fff" text-anchor="middle">GvOS</text>
-</svg>
